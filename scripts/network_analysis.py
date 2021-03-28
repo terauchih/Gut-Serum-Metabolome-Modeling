@@ -1,3 +1,9 @@
+"""
+Functions to run network analysis from given data
+
+"""
+import networkx as nx
+
 
 def network_analysis(df_from_matched_pathways):
     """

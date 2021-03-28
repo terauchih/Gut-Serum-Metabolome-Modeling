@@ -1,3 +1,6 @@
+"""script to get the metabolic referene data"""
+
+
 def get_metabolic_pathways():
     """
     Getting metabolic pathways from MetaCyc.
