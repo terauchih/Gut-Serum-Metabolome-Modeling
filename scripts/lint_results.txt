@@ -1,0 +1,158 @@
+get_bacterial_taxa.py
+************* Module get_bacterial_taxa
+get_bacterial_taxa.py:36:0: C0305: Trailing newlines (trailing-newlines)
+get_bacterial_taxa.py:30:15: E0602: Undefined variable 'dothing' (undefined-variable)
+get_bacterial_taxa.py:21:4: W0612: Unused variable 'taxa_fullname' (unused-variable)
+get_bacterial_taxa.py:30:4: W0612: Unused variable 'new_data' (unused-variable)
+
+--------------------------------------------------------------------
+Your code has been rated at -6.00/10 (previous run: -9.41/10, +3.41)
+
+************* Module get_bacterial_taxa_peped
+get_bacterial_taxa_peped.py:30:15: E0602: Undefined variable 'dothing' (undefined-variable)
+get_bacterial_taxa_peped.py:21:4: W0612: Unused variable 'taxa_fullname' (unused-variable)
+get_bacterial_taxa_peped.py:30:4: W0612: Unused variable 'new_data' (unused-variable)
+
+--------------------------------------------------------------------
+Your code has been rated at -4.00/10 (previous run: -9.41/10, +5.41)
+
+get_metabolic_pathways.py
+************* Module get_metabolic_pathways
+get_metabolic_pathways.py:14:0: C0305: Trailing newlines (trailing-newlines)
+
+--------------------------------------------------------------------
+Your code has been rated at 5.00/10 (previous run: -8.33/10, +13.33)
+
+
+---------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: -8.33/10, +18.33)
+
+network_analysis.py
+************* Module network_analysis
+network_analysis.py:11:0: C0303: Trailing whitespace (trailing-whitespace)
+network_analysis.py:7:21: W0613: Unused argument 'df_from_matched_pathways' (unused-argument)
+network_analysis.py:5:0: W0611: Unused networkx imported as nx (unused-import)
+
+-------------------------------------------------------------------
+Your code has been rated at 0.00/10 (previous run: -8.75/10, +8.75)
+
+************* Module network_analysis_peped
+network_analysis_peped.py:8:21: W0613: Unused argument 'df_from_matched_pathways' (unused-argument)
+network_analysis_peped.py:5:0: W0611: Unused networkx imported as nx (unused-import)
+
+--------------------------------------------------------------------
+Your code has been rated at 3.33/10 (previous run: -8.75/10, +12.08)
+
+path_taxa_matching.py
+************* Module path_taxa_matching
+path_taxa_matching.py:15:0: C0305: Trailing newlines (trailing-newlines)
+path_taxa_matching.py:3:29: W0613: Unused argument 'taxa' (unused-argument)
+path_taxa_matching.py:3:35: W0613: Unused argument 'pathways' (unused-argument)
+
+----------------------------------------------------------------------
+Your code has been rated at -5.00/10 (previous run: -18.33/10, +13.33)
+
+************* Module path_taxa_matching_peped
+path_taxa_matching_peped.py:4:29: W0613: Unused argument 'taxa' (unused-argument)
+path_taxa_matching_peped.py:4:35: W0613: Unused argument 'pathways' (unused-argument)
+
+---------------------------------------------------------------------
+Your code has been rated at 0.00/10 (previous run: -18.33/10, +18.33)
+
+plot_results.py
+************* Module plot_results
+plot_results.py:2:52: C0303: Trailing whitespace (trailing-whitespace)
+plot_results.py:5:26: W0613: Unused argument 'network_analysis_result' (unused-argument)
+
+-----------------------------------------------------------------------
+Your code has been rated at -10.00/10 (previous run: -36.67/10, +26.67)
+
+************* Module plot_results_peped
+plot_results_peped.py:2:52: C0303: Trailing whitespace (trailing-whitespace)
+plot_results_peped.py:6:26: W0613: Unused argument 'network_analysis_result' (unused-argument)
+
+-----------------------------------------------------------------------
+Your code has been rated at -10.00/10 (previous run: -36.67/10, +26.67)
+
+get_bacterial_taxa.py
+************* Module get_bacterial_taxa
+get_bacterial_taxa.py:36:0: C0305: Trailing newlines (trailing-newlines)
+get_bacterial_taxa.py:30:15: E0602: Undefined variable 'dothing' (undefined-variable)
+get_bacterial_taxa.py:21:4: W0612: Unused variable 'taxa_fullname' (unused-variable)
+get_bacterial_taxa.py:30:4: W0612: Unused variable 'new_data' (unused-variable)
+
+--------------------------------------------------------------------
+Your code has been rated at -6.00/10 (previous run: -6.00/10, +0.00)
+
+************* Module pepedTemp
+pepedTemp.py:1:0: C0103: Module name "pepedTemp" doesn't conform to snake_case naming style (invalid-name)
+pepedTemp.py:30:15: E0602: Undefined variable 'dothing' (undefined-variable)
+pepedTemp.py:21:4: W0612: Unused variable 'taxa_fullname' (unused-variable)
+pepedTemp.py:30:4: W0612: Unused variable 'new_data' (unused-variable)
+
+------------------------------------
+Your code has been rated at -6.00/10
+
+get_metabolic_pathways.py
+************* Module get_metabolic_pathways
+get_metabolic_pathways.py:14:0: C0305: Trailing newlines (trailing-newlines)
+
+------------------------------------------------------------------
+Your code has been rated at 5.00/10 (previous run: 5.00/10, +0.00)
+
+************* Module pepedTemp
+pepedTemp.py:1:0: C0103: Module name "pepedTemp" doesn't conform to snake_case naming style (invalid-name)
+
+--------------------------------------------------------------------
+Your code has been rated at 5.00/10 (previous run: -6.00/10, +11.00)
+
+network_analysis.py
+************* Module network_analysis
+network_analysis.py:11:0: C0303: Trailing whitespace (trailing-whitespace)
+network_analysis.py:7:21: W0613: Unused argument 'df_from_matched_pathways' (unused-argument)
+network_analysis.py:5:0: W0611: Unused networkx imported as nx (unused-import)
+
+------------------------------------------------------------------
+Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)
+
+************* Module pepedTemp
+pepedTemp.py:1:0: C0103: Module name "pepedTemp" doesn't conform to snake_case naming style (invalid-name)
+pepedTemp.py:8:21: W0613: Unused argument 'df_from_matched_pathways' (unused-argument)
+pepedTemp.py:5:0: W0611: Unused networkx imported as nx (unused-import)
+
+------------------------------------------------------------------
+Your code has been rated at 0.00/10 (previous run: 5.00/10, -5.00)
+
+path_taxa_matching.py
+************* Module path_taxa_matching
+path_taxa_matching.py:15:0: C0305: Trailing newlines (trailing-newlines)
+path_taxa_matching.py:3:29: W0613: Unused argument 'taxa' (unused-argument)
+path_taxa_matching.py:3:35: W0613: Unused argument 'pathways' (unused-argument)
+
+--------------------------------------------------------------------
+Your code has been rated at -5.00/10 (previous run: -5.00/10, +0.00)
+
+************* Module pepedTemp
+pepedTemp.py:1:0: C0103: Module name "pepedTemp" doesn't conform to snake_case naming style (invalid-name)
+pepedTemp.py:4:29: W0613: Unused argument 'taxa' (unused-argument)
+pepedTemp.py:4:35: W0613: Unused argument 'pathways' (unused-argument)
+
+-------------------------------------------------------------------
+Your code has been rated at -5.00/10 (previous run: 0.00/10, -5.00)
+
+plot_results.py
+************* Module plot_results
+plot_results.py:2:52: C0303: Trailing whitespace (trailing-whitespace)
+plot_results.py:5:26: W0613: Unused argument 'network_analysis_result' (unused-argument)
+
+----------------------------------------------------------------------
+Your code has been rated at -10.00/10 (previous run: -10.00/10, +0.00)
+
+************* Module pepedTemp
+pepedTemp.py:2:52: C0303: Trailing whitespace (trailing-whitespace)
+pepedTemp.py:1:0: C0103: Module name "pepedTemp" doesn't conform to snake_case naming style (invalid-name)
+pepedTemp.py:6:26: W0613: Unused argument 'network_analysis_result' (unused-argument)
+
+----------------------------------------------------------------------
+Your code has been rated at -20.00/10 (previous run: -5.00/10, -15.00)
+

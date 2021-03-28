@@ -1,3 +1,6 @@
+"""Pairing the taxa data with the pathway reference data"""
+
+
 def match_pathways_with_taxa(taxa, pathways):
     """
     matches appropriate pathways to the inputted taxa.
