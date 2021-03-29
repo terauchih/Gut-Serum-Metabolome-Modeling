@@ -5,13 +5,26 @@ Functions to run network analysis from given data
 import networkx as nx
 
 
-def network_analysis(df_from_matched_pathways):
+## Making a fake input data:
+fake_nodes = ["metA", "metB", "metC"]
+
+fake_edges = [("metA", "metB", {"weight":2}),
+             ("metB", "metC", {"weight":1}),
+             ("metA", "metC", {"weight":1})]
+
+def network_analysis(nodes, edges):
     """
     Runs the networkd analysis for the metabolic pathways of bacteria in group.
     """
 
-    # networkx
+    # make an empty directed graph:
+    G = nx.DiGraph()
 
-    # network analysis no graphin
+    # add nodes and edges from the input:
+    G.add_nodes_from(nodes)
+    G.add_edges_from(edges)
+    
+    # draw it:
+    nx.draw(G)
 
-    return "result of network analysis"
+    return G
