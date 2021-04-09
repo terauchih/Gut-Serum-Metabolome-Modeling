@@ -1,0 +1,11 @@
+{
+ "argv": [
+  "/Users/hinakoterauchi/Google_Drive/CMSE802/Gut-Serum-Metabolome-Modeling/envs/bin/python",
+  "-m",
+  "ipykernel_launcher",
+  "-f",
+  "{connection_file}"
+ ],
+ "display_name": "Python 3",
+ "language": "python"
+}
