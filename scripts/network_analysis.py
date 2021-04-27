@@ -32,16 +32,33 @@ def make_fake_data():
 #-----------------------------
 def make_nodes(graph, data):
     
-    graph.add_nodes_from(nodes)
+    graph.add_nodes_from(data.keys())
     
-    return graph_with_nodes
-
+    return graph
 #------------------------------
-def make_edges():
+def add_edge_directions(graph, pathways):
     
-    # stufff
-    return None
-
+    for key, val in pathways.items():
+        
+        graph.add_edge(val["in"],val["out"], pathwayName = key)
+    
+    return graph 
+#------------------------------
+def make_edges(graph, data):
+        
+    for key, val in data.items():
+        for item in val.keys():
+            # add node attribute:
+            if item == "relativeAbundance":
+                print(val[item])
+                graph.nodes[key][item]=val[item]
+        
+            # Get the directions:
+            elif item == "pathways":
+                print(val[item])
+                graph = add_edge_directions(graph, val[item])
+    
+    return graph
 #--------------------------------
 def initialize_graph(data):
     """
