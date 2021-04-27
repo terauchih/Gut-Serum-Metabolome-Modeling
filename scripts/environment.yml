@@ -1,0 +1,12 @@
+name: /Users/hinakoterauchi/Google_Drive/CMSE802/Gut-Serum-Metabolome-Modeling/envs
+channels:
+  - defaults
+dependencies:
+  - matplotlib
+  - jupyter
+  - pdoc3
+  - networkx
+  - pytest
+  - pylint
+  - pip
+prefix: /Users/hinakoterauchi/Google_Drive/CMSE802/Gut-Serum-Metabolome-Modeling/envs
