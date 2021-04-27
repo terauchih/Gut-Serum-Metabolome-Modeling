@@ -60,22 +60,33 @@ def make_edges(graph, data):
     
     return graph
 #--------------------------------
-def initialize_graph(data):
+def initialize_graph(data,make_fake=False):
     """
     Initialize networkx graph with specified nodes
     """
     import networkx as nx
     
-    # make an empty directed graph:
-    graph = nx.MultiDiGraph()
+    if make_fake==True:
+        # make an empty directed graph:
+        graph = nx.MultiDiGraph()
+        
+        # add fake nodes: 
+        graph_with_nodes = make_nodes(graph, data)
 
-    # add nodes: 
-    graph_with_nodes = make_nodes(graph, data)
-    
-    # add edges:
-    graph_with_edges = make_edges(graph_with_nodes, data)
-
-    return graph_with_edges
+        # add fake edges:
+        graph_with_edges = make_edges(graph_with_nodes, data)
+        
+        return graph_with_edges
+     
+    # if real input received:
+    else: 
+        graph = nx.from_pandas_edgelist(data,
+                                        "source",
+                                        "target",
+                                        ["weight"],
+                                       create_using=nx.MultiDiGraph())
+        
+        return graph
 
 #-------------------------------------------
 
@@ -83,10 +94,35 @@ def draw_network_graph(graph):
     """
     Plots the network graph taken from the input
     """
+    import matplotlib.pyplot as plt
+    import random
     
-    #graphing
+    for u,v,d in graph.edges(data=True):
+        d['weight'] = random.random()
+
+    edges,weights = zip(*nx.get_edge_attributes(graph,'weight').items())
+
     
-    nx.draw(graph, with_labels=True)
+    nx.draw_networkx(graph, 
+                     with_labels=True,
+                     arrows=True, 
+                     arrowsize=20,
+                     node_size=900,
+                     node_color='skyblue',
+                     width=6,
+                    pos=nx.spring_layout(graph,k=4),
+                    edge_cmap=plt.cm.GnBu,
+                    edge_color=weights,
+                    edgelist=edges,
+                    font_size=14)
+    
+    #plt.figure(figsize=(60,40))
+    ax = plt.gca()
+    plt.axis("off")
+    ax.margins(0.08)
+    
+    plt.tight_layout()
+    plt.show()
 
 
 
