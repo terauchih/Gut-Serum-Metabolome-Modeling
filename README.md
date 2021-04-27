@@ -1,2 +1,35 @@
 # Gut-Serum-Metabolome-Modeling
-Final project for CMSE802. 
+---
+# Overview
+
+Since the discovery of bacteria by Antoni van Leeuwenhoek in 1676, the field of microbiology has significantly expanded with the help of technological advancements. The invention of a microscope was the technological advanement that allowed Leeuwenhoek to see and describe the existence of bacteria that kickstarted the field of microbiology. Like other scientific diciplines, microbiology relies on available technologies and tools at the time to be able to ask and answer questions. 
+
+Following the official discovery of DNA in 1950s, the invention of sequencing technology in 1970s propelled the field of genetics to the forfront of scientific interest. The sequencing technology then had very minimal capabilities due to the lack of computational technologies available today. It was not until the 2000s that mass sequencing became available with the invention of Next-Generation Sequencing which is now the staple in the microbiome resarech field. 
+
+The definition of microbiome or microbiota is best described in the words of the two major pioneers of the field, Joshua Lederberg: *“ecological community of commensal, symbiotic and pathogenic organisms that share our body space.”$^{1}$* These microorganisms are a collection of bacteria, fungi, archea, and even virus particles that cannot be viewed with the naked eyes. Due to the complexity of microbiome compositions, reserchers typically focus on a single domain to study, in my case: bacteria. 
+
+Bacterial mirobiome reserch grew exponetially with the introduction of Next-Gen sequencing technologies. Previouly, bacterial research solely depended on what is called "wet lab" tools; a term describing experimental procedures/tools used in a traditional lab space involving white lab coats, gloves, beakers, and anything else included in a typical imegery of reserch scientists. The large limitation the "wet lab" experiments faces when studying bacteria, is that not all bacteria can be studied under the lab conditions outside of their natural environment, whether it be the deep sea vents, agricultural soils, or in and on animals, including humans. Sequencing successfuly addressed the problem by eliminating the need for growth of bacteria under lab conditions, allowing researchers to identify and study numerous bacterial species never observed before.
+
+In 2007, Human Microbiome Project showed the sheer amount and diversity of bacterial microbiome contents across variety of human body sites, showing that an average adult human body contains at least ten times more bacterial cells than its own cells, leading to the conceptualization of microbiome as the "forgotten organ"$^{2}$. Since then, numerous studies have come out associating human microbiome, typically that of the gut, to a plethora of clinical pathologies and diseases including but not limited to: diabetes, inflammatory bowel disease, obesity, and allergies$^{3}$. The exact mechanisms of how a microbiome could affect the host is currenty uknown, and thus a major topic being currently explored by various study groups across the globe. 
+
+One of the potential ways microbiome could affect the host physology is through the production and utilization of various metabolites by the bacterial members of the microbiome, also known as a metabolome. Many of the produced metabolites are common between the host and bacteria, just as many are unique to the host, the microbiome, or a specific type of bacteria. One aspect of metabolome of interest is the metabolic flux. Bacteria producescertain metabolites based on the nutrients provided by the host, which then could be used up by neighboring bacteria for their energy or metabolic needs. In order to assess how much of which bacterial metabolites are present in enough abundance to affect the host health, metabolic flux must be considered. 
+
+There is a mathematical approach to assess and study the metabolic networks called flux balance analysis(FBA)$^{4}$. The flux balance model will be based on the real data generated from my own thesis research experiments.  
+
+---
+# Program Description
+
+The program will aim to model metabolic flux network in a given set of bacteria in a microbiome. Several microbiome samples are already sequenced and processed using the 16SV4 rRNA gene and an pen-source QIIME2${^5}$ pipeline. These sequences have been processed through quality control and assigned appropriate bacterial taxonomy(identities). These sequence reads have been turned into reatiev abundance values for each taxa present in each sample. In addition, their metabolic potential has been predicted using an open-source paprica pipeline$^{6}$. 
+
+This program will take inputs of taxonomic assignments with relative abundance values and predicted metabolic potental to run a network analysis to model the metabolic flux and the potential relationships among the members of the microbiota. 
+
+---
+# References
+
+1. Lederberg J, McCray AT, Ome sweet ‘omics – A genealogical treasury of words. Scientist. 15:8-8 (2001)
+2. Turnbaugh, P., Ley, R., Hamady, M. et al. The Human Microbiome Project. Nature 449, 804–810 (2007). 
+3. Clemente JC, Ursell LK, Parfrey LW, Knight R, The Impact of the Gut Microbiota on Human Health: An Integrative View. Cell. 148(6): 1258-1270 (2012).
+4. Orth JD, Thiele I, Palsson BØ. What is flux balance analysis?. Nat Biotechnol. 2010;28(3):245-248. doi:10.1038/nbt.1614
+5. Bolyen E, Rideout JR, Dillon MR, Bokulich NA, Abnet CC, Al-Ghalith GA, Alexander H, Alm EJ, Arumugam M, Asnicar F, Bai Y, Bisanz JE, Bittinger K, Brejnrod A, Brislawn CJ, Brown CT, Callahan BJ, Caraballo-Rodríguez AM, Chase J, Cope EK, Da Silva R, Diener C, Dorrestein PC, Douglas GM, Durall DM, Duvallet C, Edwardson CF, Ernst M, Estaki M, Fouquier J, Gauglitz JM, Gibbons SM, Gibson DL, Gonzalez A, Gorlick K, Guo J, Hillmann B, Holmes S, Holste H, Huttenhower C, Huttley GA, Janssen S, Jarmusch AK, Jiang L, Kaehler BD, Kang KB, Keefe CR, Keim P, Kelley ST, Knights D, Koester I, Kosciolek T, Kreps J, Langille MGI, Lee J, Ley R, Liu YX, Loftfield E, Lozupone C, Maher M, Marotz C, Martin BD, McDonald D, McIver LJ, Melnik AV, Metcalf JL, Morgan SC, Morton JT, Naimey AT, Navas-Molina JA, Nothias LF, Orchanian SB, Pearson T, Peoples SL, Petras D, Preuss ML, Pruesse E, Rasmussen LB, Rivers A, Robeson MS, Rosenthal P, Segata N, Shaffer M, Shiffer A, Sinha R, Song SJ, Spear JR, Swafford AD, Thompson LR, Torres PJ, Trinh P, Tripathi A, Turnbaugh PJ, Ul-Hasan S, van der Hooft JJJ, Vargas F, Vázquez-Baeza Y, Vogtmann E, von Hippel M, Walters W, Wan Y, Wang M, Warren J, Weber KC, Williamson CHD, Willis AD, Xu ZZ, Zaneveld JR, Zhang Y, Zhu Q, Knight R, and Caporaso JG. 2019. Reproducible, interactive, scalable and extensible microbiome data science using QIIME 2. Nature Biotechnology 37: 852–857. https://doi.org/10.1038/s41587-019-0209-9
+6. Bowman, J. S., & Ducklow, H. W. (2015). Microbial Communities Can Be Described by Metabolic Structure: A General Framework and Application to a Seasonally Variable, Depth-Stratified Microbial Community from the Coastal West Antarctic Peninsula. PloS one, 10(8), e0135868.
+
