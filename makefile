@@ -1,4 +1,4 @@
-MODULENAME = Gut_Serum_Metabolome_Modeling
+MODULENAME = Gut_Serum_Metabolome_Modeling 
 
 help:
 	@echo ""
@@ -20,7 +20,7 @@ help:
 	@echo "	make test"
 	@echo ""
 	
-     
+
 init:
 	conda env create --prefix ./envs --file environment.yml
 
@@ -41,3 +41,4 @@ test:
     
 
 .PHONY: init docs lint UML test 
+
